@@ -1,5 +1,4 @@
-﻿ Run, "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Stardew Valley.exe"
-#NoEnv
+﻿#NoEnv
 #Warn
 #singleinstance, force
 first = true
@@ -16,8 +15,8 @@ WinWaitClose, Stardew Valley
 ExitApp
 
 #If WinActive("Stardew Valley")
-XButton2::
-While GetKeyState("XButton2","P") {
+PgUp::
+While GetKeyState("PgUp","P") {
  SendEvent {c Down}
  sleep 10
  SendEvent {c Up}
